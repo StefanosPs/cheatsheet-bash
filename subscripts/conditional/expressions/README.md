@@ -10,7 +10,7 @@ Conditional expressions are used by the [[ compound command and the test and [ b
 | `[-a file]`            | True if file exists.                                                                                       |
 | `[-d directory]`       | True if directory exists.                                                                                  |
 | `[-s file]`            | True if file exists and has a size greater than zero.                                                      |
-| `[[-r][-w][-x]] file]` | True if file exists and is readable|writable|executable.                                                   |
+| `[[-r][-w][-x]] file]` | True if file exists and is readable or writable or executable.                                                   |
 | `[-L] file]`           | True if file exists and is a symbolic link.                                                                |
 | `file1 -ef file2`      | True if file1 and file2 refer to the same device and inode numbers.                                        |
 | `file1 -nt file2`      | True if file1 is newer (according to modification date) than file2, or if file1 exists and file2 does not. |
