@@ -12,19 +12,6 @@
 | ---	| :---												|
 | `history`  |    shows command line history"			    | 
 
-[Read More](https://www.gnu.org/software/bash/manual/bash.html#Bash-History-Builtins)
-
-
-### Event Designators
-| COMMAND   | Description									|
-| :---	| :---												|
-| `!<string>`   | Refers to command starting with 'string'" |
-| `!<n>`	    | Refers to command line 'n'"               |
-| `!-<n>`       | Refer to the command n lines back.        |
-| `!!`	        | Repeats the last command"                 |
-[Read More](https://www.gnu.org/software/bash/manual/bash.html#Event-Designators)
-
-
-
+[Read More](https://www.gnu.org/software/bash/manual/bash.html#Bash-History-Builtins) 
 
 [HOME](../../README.md)
