@@ -20,6 +20,16 @@ printResult "'\$2'=${2}"
 printResult "'\$3'=${3}"
 
 
+title "SET Arguments"
+echo Input parameters = $#
+myvar="-s 123"
+
+#split based on blank chars
+#assign to input parameters!!
+echo "set arguments $myvar"
+set -- $myvar
+printResult "\$* = $*"  
+
 
 title "Read Arguments"
 
@@ -45,3 +55,4 @@ while [ $1 ]; do
         ;;
     esac;    
 done
+
