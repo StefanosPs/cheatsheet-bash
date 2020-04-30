@@ -22,6 +22,7 @@ This is a small bash handbook with examples. I made it just for fun, practice an
 - [Functions](subscripts/functions/README.md)
 - [Exit](subscripts/exitstatus/README.md)
 - [Builtins](subscripts/builtins/README.md)
+- [Commands](subscripts/commands/README.md)
 
 ### Stream
 
