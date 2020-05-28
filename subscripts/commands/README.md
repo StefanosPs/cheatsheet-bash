@@ -10,11 +10,13 @@ Search for files in a directory hierarchy
     find ./ -type d -exec chmod 0755 {} \; -print
     #change permissions of all files
     find ./ -type f -exec chmod 0644 {} \; -print
-
+    #find all files and print the name
     for file in "$( find ./ -type f )"
     do
         echo "$file"
     done | sort >> ./files.lst
+    #find all directories ( in max depth 2 ) and list them
+    find . -maxdepth 2 -type d -ls
 ```
 
 ### Manage Files Content
