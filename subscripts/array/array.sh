@@ -41,3 +41,7 @@ echo 'num=$(( ${#array[*]} - 1 ));unset array[num];echo ${array[@]} '
 num=$(( ${#array[*]} - 1 ))
 unset array[num]
 echo -e "\t" ${array[@]}
+
+#Array Count
+echo 'alphabet=( {a..z} );echo ${#alphabet[@]} '
+echo -e "\t" `alphabet=( {a..z} );echo ${#alphabet[@]}`
