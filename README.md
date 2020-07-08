@@ -113,6 +113,7 @@ The Pipe is a command in Linux that lets you use two or more commands such that 
 * [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 * [The Linux Documentation Project](http://www.tldp.org/LDP/abs/html/) 
 * [bash-hackers](https://wiki.bash-hackers.org/)
-* [devhints.io](https://devhints.io/bash) 
+* [Google Shell Style Guide](https://google.github.io/styleguide/shellguide.html)
+<!-- * [devhints.io](https://devhints.io/bash) 
 * [Awesome Lists](https://github.com/awesome-lists/awesome-bash)
-* [denysdovhan](https://github.com/denysdovhan/bash-handbook/blob/master/README.md)
+* [denysdovhan](https://github.com/denysdovhan/bash-handbook/blob/master/ README.md) -->
