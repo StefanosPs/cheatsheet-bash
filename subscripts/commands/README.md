@@ -1,3 +1,36 @@
+## bash 
+#### screen
+
+screen - screen manager with VT100/ANSI terminal emulation
+```bash
+#Starting Named Session
+$ screen -S session_name
+
+#Detach from Linux Screen Session
+# Ctrl+a d
+
+$ screen -ls
+
+$ screen -r
+```
+*Shortcuts*
+|   Shortcut    | Description                                        |
+| :-----------: | :------------------------------------------------- |
+|   Ctrl+a ?    | Display all shortcut                               |
+|   Ctrl+a c    | Create a new window (with shell)                   |
+|   Ctrl+a "    | List all window                                    |
+|   Ctrl+a 0    | Switch to window 0 (by number )                    |
+|   Ctrl+a A    | Rename the current window                          |
+|   Ctrl+a S    | Split current region horizontally into two regions |
+|    Ctrl+a     | Split current region vertically into two regions   |
+|  Ctrl+a tab   | Switch the input focus to the next region          |
+| Ctrl+a Ctrl+a | Toggle between the current and previous region     |
+|   Ctrl+a Q    | Close all regions but the current one              |
+|   Ctrl+a X    | Close the current region                           |
+
+
+
+
 
 ## Files
 
@@ -71,6 +104,15 @@ if($0 != "" && !/^#/){\
  }'  /etc/hosts
  
 
+```
+
+#### wc
+Counts the number of bytes, characters, whitespace-separated words,
+and newlines in each given FILE, or standard input if none are given or
+
+```bash
+#Counts the lines of a file 
+wc -l <filename> 
 ```
 <!---
 ## File Permissions
