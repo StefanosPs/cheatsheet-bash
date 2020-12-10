@@ -117,3 +117,76 @@ wc -l <filename>
 <!---
 ## File Permissions
 -->
+
+### Manage Files System
+
+#### chmod
+The chmod command is fairly simple in itself, but giving the right permissions to files and directories is a whole different game.
+
+```bash
+
+chmod 664 robots.txt
+chmod 775 public/images
+
+```
+
+#### tar
+The Linux tar stands for tape archive. It is used for collecting many files into one archive file. 
+
+```bash
+tar -cvf my-archive.tar /path/to/directory
+
+tar -xvf my-archive.tar -C /home/myfolder/
+```
+
+### Transfer Files 
+
+#### scp
+Remote secure copy
+
+```bash
+
+scp username@remotehost.com:/path/to/foobar.txt /some/local/directory
+
+```
+
+#### rsync
+
+```bash
+
+rsync -azP $SOURCECORE $DESTINATION
+
+```
+
+#### ftp copy
+
+```bash
+
+set ftp:ssl-allow no
+open $HOST
+user $USER $PASS
+lcd $SOURCEFOLDER
+mirror  --parallel=5 --reverse  --only-newer --verbose --exclude $EXCLUDE1 --exclude $EXCLUDE2 --exclude $EXCLUDE3 --exclude $EXCLUDE4 --exclude $EXCLUDE5 --exclude-glob .*  --exclude-glob *.md   $SOURCEFOLDER $TARGETFOLDER
+bye
+
+```
+
+
+## Network
+
+#### tcpdump
+Capture the TCP layer packets on a production
+server into a file, then open and view it with Wireshark
+
+####  ss -s
+Check the TCP connection status 
+
+
+
+## Security
+ssh-keygen command is used to generate a new SSH key pair. 
+```bash
+#Note that in the example above, we used the ED25519 signing algorithm. While ED25519 is considered best practice, you should always do some research on the different available signing algorithms.
+ssh-keygen -t ed25519
+
+```
